@@ -18,6 +18,7 @@ public class MathCalculator {
                 + multiply(first, second)
                 + diff(first, second)
                 + div(first, second);
+
     }
 
     public static void main(String[] args) {
