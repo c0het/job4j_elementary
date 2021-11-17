@@ -15,4 +15,13 @@ public class TriangleTest {
         boolean rsl = Triangle.exist(ab, ac, bc);
         Assert.assertTrue(rsl);
     }
+
+    @Test
+    public void unrealTriangl() {
+        double ab = 2.0;
+        double ac = 10.0;
+        double bc = 2.0;
+        boolean rsl = Triangle.exist(ab, ac, bc);
+        Assert.assertFalse(rsl);
+    }
 }
