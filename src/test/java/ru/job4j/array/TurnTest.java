@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 public class TurnTest {
 
         @Test
-        public void whenTurnArrayWithEvenAmountOfElementsThenTurnedArray () {
+        public void whenTurnArrayWithEvenAmountOfElementsThenTurnedArray() {
             int[] input = new int[]{4, 1, 6, 2};
             int[] result = Turn.back(input);
             int[] expected = new int[]{2, 6, 1, 4};
@@ -16,15 +16,12 @@ public class TurnTest {
         }
 
         @Test
-        public void whenTurnArrayWithOddAmountOfElementsThenTurnedArray () {
+        public void whenTurnArrayWithOddAmountOfElementsThenTurnedArray() {
             int[] input = new int[]{4, 1, 6, 2, 7, 9, 10};
             int[] result = Turn.back(input);
             int[] expected = new int[]{10, 9, 7, 2, 6, 1, 4};
             Assert.assertArrayEquals(expected, result);
-        /*
-            напишите здесь тест, проверяющий переворот массива
-            с нечётным числом элементов, например {1, 2, 3, 4, 5}.
-         */
+
         }
     }
 
