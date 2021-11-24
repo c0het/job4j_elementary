@@ -17,7 +17,7 @@ public class MatrixCheckTest {
     }
 
     @Test
-    public void whenHasEmpty() {
+    public void whenHorIsEmpty() {
         char[][] input = {
                 {' ', ' ', ' '},
                 {' ', ' ', ' '},
@@ -38,6 +38,18 @@ public class MatrixCheckTest {
         int column = 2;
         boolean result = MatrixCheck.monoVertical(input, column);
         Assert.assertTrue(result);
+    }
+
+    @Test
+    public void whenHasVerIsEmpty() {
+        char[][] input = {
+                {' ', ' ', ' '},
+                {' ', ' ', ' '},
+                {' ', ' ', ' '},
+        };
+        int column = 2;
+        boolean result = MatrixCheck.monoVertical(input, column);
+        Assert.assertFalse(result);
     }
 
     @Test
